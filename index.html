@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5f1a520937f51ea9e1505b61cdde0131&libraries=services"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+      <h2>전기차 현황</h2>
+      <div class="local_select">
+        <div class="select_wrap">
+          <span>시/도</span> 
+          <select name="metroCode" id="metro"></select>
+        </div>
+        <div class="select_wrap">
+          <span>군/구</span> 
+          <select name="cityCode" id="city"></select>
+        </div>
+        <button type="button" class="search_btn" disabled>검색</button>
+      </div>
+      <div class="data_cont_wrap">
+        <div id="map"></div>
+        <div class="cont_list_box">
+          <ul class="list_header list_tr">
+            <li class="list_td list_th list_num"><span>번호</span></li>
+            <li class="list_td list_th"><span>시/도</span></li>
+            <li class="list_td list_th"><span>군/구</span></li>
+            <li class="list_td list_th"><span>위치</span></li>
+            <li class="list_td list_th word_w"><span>상세 위치</span></li>
+            <li class="list_td list_th list_num"><span>급속충전기 대수</span></li>
+            <li class="list_td list_th list_num"><span>완속충전기 대수</span></li>
+            <li class="list_td list_th word_w"><span>지원차종</span></li>
+          </ul>
+          <ul class="list_wrap"></ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+
+
